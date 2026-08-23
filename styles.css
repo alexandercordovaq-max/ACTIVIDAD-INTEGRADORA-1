@@ -231,3 +231,20 @@ img {
     border: 8px solid #dbeafe;
     margin: 0 auto;
 }
+
+/* --------------------------------------------
+   SOBRE MÍ
+--------------------------------------------- */
+
+.about {
+    background-color: var(--color-background);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: var(--color-text-light);
+}
