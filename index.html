@@ -29,7 +29,7 @@
                         <li> <a href="#inicio">Inicio</a></li>           
                         <li> <a href="#sobre-mi">Sobre mí</a></li>
                         <li> <a href="#habilidades">Habilidades</a></li>
-                        <li> <a fref="#proyectos">Proyectos</a></li>
+                        <li> <a href="#proyectos">Proyectos</a></li>
                         <li> <a href="#contacto">Contacto</a></li>
                      </ul>
                 </nav>
@@ -74,15 +74,16 @@
             </section>
             
             <!-- Sobre mí -->
-            <section id="sobre-mi" class="about">
-                
-                <div class="container">
-                    
-                    <div class="selection-title">
-                        <p>Conoceme</p>    
-                        <h2>Sobre Mí</h2>
-                    </div>
-                    
+            <section id="sobre-mi" class="section about">
+            <div class="container">
+
+                <div class="section-title">
+                    <p>Conóceme</p>
+                    <h2>Sobre mí</h2>
+                </div>
+
+                <div class="about-content">
+
                     <div class="about-text">
                         <p>
                             Soy Alexander Córdova, estudiante de Ingeniería en
@@ -107,7 +108,8 @@
                         </p>
                     </div>
 
-                    <div class="info-card">
+                    <div class="about-info">
+                        <div class="info-card">
                             <h3>Formación</h3>
                             <p>Ingeniería en Sistemas Inteligentes</p>
                         </div>
@@ -121,13 +123,17 @@
                             <h3>Experiencia</h3>
                             <p>Digitación, inventarios y logística</p>
                         </div>
+                    </div>
 
                 </div>
-            
-            </section>  
 
-            <!-- Habilidades -->
-             <section id="habilidades" class="section skills">
+            </div>
+        </section>
+
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="section skills">
+            <div class="container">
 
                 <div class="section-title">
                     <p>Mis conocimientos</p>
@@ -136,71 +142,104 @@
 
                 <div class="skills-container">
 
-                    <h3>HTML</h3>
+                    <article class="skill-card">
+                        <div class="skill-icon">01</div>
+                        <h3>HTML</h3>
                         <p>
                             Creación de estructuras web utilizando
                             HTML5 y etiquetas semánticas.
                         </p>
-                    
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">02</div>
                         <h3>CSS</h3>
                         <p>
                             Diseño y personalización de páginas web
                             utilizando CSS3.
                         </p>
-                  
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">03</div>
                         <h3>GitHub</h3>
                         <p>
                             Control de versiones y almacenamiento
                             de proyectos mediante Git y GitHub.
                         </p>
-                    
+                    </article>
 
+                    <article class="skill-card">
+                        <div class="skill-icon">04</div>
                         <h3>Excel</h3>
                         <p>
                             Manejo de información, tablas, fórmulas
                             y análisis de datos.
                         </p>
-                   
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">05</div>
                         <h3>Power BI</h3>
                         <p>
                             Creación de reportes y visualizaciones
                             para análisis de información.
                         </p>
-                   
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">06</div>
                         <h3>SQL</h3>
                         <p>
                             Conocimientos básicos para trabajar
                             con bases de datos y consultas SQL.
                         </p>
-                   
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">07</div>
                         <h3>Análisis de datos</h3>
                         <p>
                             Organización, interpretación y análisis
                             de información para apoyar decisiones.
                         </p>
-                    
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">08</div>
                         <h3>Trabajo en equipo</h3>
                         <p>
                             Capacidad de colaboración, comunicación
                             y cumplimiento de objetivos.
                         </p>
-                  
+                    </article>
 
                 </div>
 
-             </section>
-            
-            <!-- Proyectos -->
-             <section id="proyectos" class="section projects">
+            </div>
+        </section>
 
-                <div class="container">
 
-                    <div class="section-title">
-                        <p>Mi trabajo</p>
-                        <h2>Proyectos</h2>
-                    </div>
-                
-                <span class="project-category">
+        <!-- Proyectos -->
+        <section id="proyectos" class="section projects">
+            <div class="container">
+
+                <div class="section-title">
+                    <p>Mi trabajo</p>
+                    <h2>Proyectos</h2>
+                </div>
+
+                <div class="projects-container">
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="img/proyecto1.webp"
+                                 alt="Proyecto de análisis de inventarios">
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category">
                                 Análisis de datos
                             </span>
 
@@ -211,9 +250,25 @@
                                 mediante la clasificación ABC, utilizando
                                 información de stock, ventas y rotación para
                                 identificar productos de mayor importancia.
-                            </p> 
+                            </p>
 
-                 <span class="project-category">
+                            <a href="#" class="project-link">
+                                Ver proyecto →
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="img/proyecto2.jpg"
+                                 alt="Proyecto de monitoreo con Grafana y Prometheus">
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category">
                                 Sistemas
                             </span>
 
@@ -226,7 +281,23 @@
                                 de servicios en un entorno Linux.
                             </p>
 
-                <span class="project-category">
+                            <a href="#" class="project-link">
+                                Ver proyecto →
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="img/proyecto3.png"
+                                 alt="Proyecto de desarrollo web">
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-category">
                                 Desarrollo web
                             </span>
 
@@ -238,14 +309,31 @@
                                 proyectos y datos de contacto.
                             </p>
 
+                            <a href="#" class="project-link">
+                                Ver proyecto →
+                            </a>
+                        </div>
+
+                    </article>
+
                 </div>
 
-             </section>
-             
-             <!-- Contacto -->
-             <section id="contacto" class="section contact">
+            </div>
+        </section>
 
-                <div class="contact-info">
+
+        <!-- Contacto -->
+        <section id="contacto" class="section contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <p>Hablemos</p>
+                    <h2>Contacto</h2>
+                </div>
+
+                <div class="contact-container">
+
+                    <div class="contact-info">
 
                         <h3>¿Tienes alguna pregunta?</h3>
 
@@ -311,23 +399,36 @@
                         <button type="submit" class="btn btn-primary">
                             Enviar mensaje
                         </button>
-                    </form>
-             </section>
-        </main>
 
-         <!-- Pie de pagina -->
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
     <footer class="footer">
+
+        <div class="container footer-container">
 
             <p>
                 © 2026 Alexander Córdova. Todos los derechos reservados.
             </p>
 
-            <a href="https://github.com/alexandercordovaq-max" target="_blank" rel="noopener noreferrer">
+            <a
+                href="https://github.com/alexandercordovaq-max"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 Mi GitHub
             </a>
 
+        </div>
+
     </footer>
 
-    </body>
-
+</body>
 </html>
