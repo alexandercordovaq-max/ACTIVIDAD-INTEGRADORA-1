@@ -33,7 +33,10 @@
                         <li> <a href="#contacto">Contacto</a></li>
                      </ul>
                 </nav>
-            
+                <button id="theme-button" class="theme-button">
+                    🌙 Modo oscuro
+                </button>
+
             </div>
 
         </header>
@@ -65,6 +68,12 @@
                                 Contactarme
                             </a>
                         </div>
+                            <p id="welcome-message" class="welcome-message">
+                                Bienvenido a mi portafolio personal.
+                            </p>
+                            
+                            <p id="current-date" class="current-date"></p>
+                        
                     </div>
 
                     <div class="hero-image">
@@ -106,6 +115,18 @@
                             aplicando mis conocimientos para resolver problemas
                             y mejorar procesos mediante soluciones digitales.
                         </p>
+                        <button id="info-button" class="btn btn-primary">
+                            Mostrar más información
+                        </button>
+
+                        <div id="extra-info" class="extra-info">
+                            <p>
+                                También tengo interés en aprender nuevas tecnologías,
+                                desarrollar soluciones digitales y fortalecer mis conocimientos
+                                en programación, análisis de datos y automatización de procesos.
+                            </p>
+                        </div>
+
                     </div>
 
                     <div class="about-info">
@@ -361,7 +382,7 @@
                     </div>
 
 
-                    <form class="contact-form">
+                    <form id="contact-form" class="contact-form">
 
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
@@ -399,7 +420,7 @@
                         <button type="submit" class="btn btn-primary">
                             Enviar mensaje
                         </button>
-
+                        <p id="form-message" class="form-message"></p>
                     </form>
 
                 </div>
@@ -429,6 +450,6 @@
         </div>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
